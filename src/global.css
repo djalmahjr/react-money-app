@@ -1,0 +1,33 @@
+/* body{
+    background-color: #444;
+    color: #ccc;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.body-site{
+    grid-area: body;
+    width: 100vw;
+    height: 100%;
+}
+html, body, #root{
+    height: 100vh;
+    width: 100vw;
+}
+#root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+    grid-template-areas: 'nav' 'body';
+}
+@media(max-width: 550px){
+    #root{
+        grid-template-rows: 25% 1fr;
+    }
+}

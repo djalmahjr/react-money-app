@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
-import './DisplayPay.css'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { moneyThunks } from './store/thunks/money'
-import IsLoading from './components/Loading'
+import { moneyThunks } from '../../store/thunks/money'
+import IsLoading from '../../components/Loading'
 
 const Display = props => {
 
@@ -25,7 +24,7 @@ const Display = props => {
 
     return (
         <div className='column'>
-            <h1>Display</h1>
+            <h1>Consolidação do mês</h1>
             <div className='display'>
                 {stateIsLoading ? <IsLoading /> : (
                     <table>

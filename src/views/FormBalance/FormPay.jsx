@@ -1,9 +1,8 @@
 import React from 'react'
 import { Formik, Form } from 'formik'
-import Input from './components/Input'
-import './FormPay.css'
+import Input from '../../components/Input'
 
-import IsLoading from './components/Loading'
+import IsLoading from '../../components/Loading'
 import { useSelector } from 'react-redux'
 
 const FormPay = ({ initialValues, handleSubmit }) => {
@@ -13,7 +12,7 @@ const FormPay = ({ initialValues, handleSubmit }) => {
 
             <Formik enableReinitialize={true} initialValues={initialValues} onSubmit={handleSubmit} >
                 <Form>
-                    <h1>Money</h1>
+                    <h1>Balanço Setembro</h1>
                     {stateIsLoading ? <IsLoading /> : (<div className="row">
                         <div className="column">
                             <h2>Saldo</h2>
