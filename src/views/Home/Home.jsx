@@ -3,13 +3,14 @@ import './Home.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/fontawesome-free-brands'
 
 export default props => {
     return (
         <>
             <div className='contentTab'>
-                <h1 className='headerTitle'><FontAwesomeIcon icon={faInfoCircle} size='sm'/> Info</h1>
-                <p>Este projeto foi desenvolvido em ReactJS com o objetivo de ser um meio de estudo, 
+                <h1 className='headerTitle'><FontAwesomeIcon icon={faInfoCircle} size='sm' /> Info</h1>
+                <p>Este projeto foi desenvolvido em ReactJS com o objetivo de ser um meio de estudo,
                     entre oque foi usado no projeto esta o consumo de uma API REST utilizando o <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON-PlaceHolder</a>.</p>
                 <p>Algumas tecnologias empregadas no projeto:</p>
                 <ul>
@@ -20,8 +21,16 @@ export default props => {
                     <li>5) Formik: <span>Para gerenciar formulários de forma mais simplificada</span></li>
                     <li>6) Axios: <span>Para realizar requests a uma API REST</span></li>
                 </ul>
+                <div className='profileGit'>
+                    <span>
+                        Developed By: Djalma Hipólito Junior
+                    </span>
+                        <a href="https://github.com/Almallito" target='_blank'>
+                            <FontAwesomeIcon icon={faGithub} size='lg' /> Acesse meu GitHub
+                        </a>
+                </div>
             </div>
-            
+
         </>
     )
 }

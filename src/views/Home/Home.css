@@ -25,3 +25,16 @@ p, a{
 p{
     margin: 15px 0;
 }
+
+.profileGit{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.profileGit span{
+    font-style: italic;
+    font-weight: 600;
+}
