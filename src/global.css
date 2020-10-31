@@ -15,6 +15,9 @@
     grid-area: body;
     width: 100vw;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 html, body, #root{
     height: 100vh;
@@ -26,8 +29,42 @@ html, body, #root{
     grid-template-rows: 65px 1fr;
     grid-template-areas: 'nav' 'body';
 }
+
+.contentTab{
+    width: 50%;
+    margin: 25px;
+    min-height: 90%;
+    border-radius: 15px;
+    color: #212121;
+    background-color: #f4f4f4;
+    padding: 15px 30px;
+    box-shadow: 3px 3px 10px 10px rgba(70,70,70,0.4);
+}
+
+.body-site, #root{
+    transition: 30ms;
+    /* background: linear-gradient(to right, #D31027, #EA384D); */
+    background-color: #9433F5;
+}
+
+@media(max-width: 1000px){
+    .contentTab{
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 700px){
+    .contentTab{
+        width: 90%;
+    }
+}
+
 @media(max-width: 550px){
     #root{
         grid-template-rows: 25% 1fr;
+    }
+    .contentTab{
+        padding: 15px;
     }
 }

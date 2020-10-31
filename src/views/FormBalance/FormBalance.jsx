@@ -5,6 +5,7 @@ import { moneyThunks } from '../../store/thunks/money'
 import { useDispatch, useSelector } from 'react-redux'
 import {actions} from '../../store/actions/money'
 
+import './FormBalance.css'
 
 
 const FormBalance = props => {
@@ -28,7 +29,7 @@ const FormBalance = props => {
 
   return (
     <>
-      <div>
+      <div className='contentTab'>
         <FormPay initialValues={moneyStore} handleSubmit={handleFormSubmit}/>
         <Display />
       </div>

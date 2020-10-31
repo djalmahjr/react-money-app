@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { moneyThunks } from '../../store/thunks/money'
 import IsLoading from '../../components/Loading'
+import DisplayLoading from './DisplayLoading'
 
 const Display = props => {
 
@@ -24,22 +25,24 @@ const Display = props => {
 
     return (
         <div className='column'>
-            <h1>Consolidação do mês</h1>
+            <h2>Consolidação do mês</h2>
             <div className='display'>
-                {stateIsLoading ? <IsLoading /> : (
+                {stateIsLoading ? <DisplayLoading /> : (
                     <table>
                         <thead>
                             <tr>
-                                <th>Total saldo</th>
-                                <th>Total Contas</th>
-                                <th>Restante</th>
+                                <th>Saldo Disponivel</th>
+                                <th>Debitos Somados</th>
+                                <th>Saldo Total Restante</th>
+                                <th>Salário Restante</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{stateSumSaldo}</td>
-                                <td>{stateSumContas}</td>
-                                <td>{stateSumSaldo - stateSumContas}</td>
+                                <td><span>R${stateSumSaldo}</span></td>
+                                <td><span>R${stateSumContas}</span></td>
+                                <td><span>R${stateSumSaldo - stateSumContas}</span></td>
+                                <td><span>R${stateDado.saldo.salario - stateSumContas}</span></td>
                             </tr>
                         </tbody>
                     </table>

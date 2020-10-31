@@ -1,0 +1,27 @@
+
+.headerTitle{
+    font-size: 68px;
+    font-weight: 700;
+    border-bottom: 3px dashed #212121;
+    margin: 0 0 25px 0;
+}
+
+ul li {
+    list-style: none;
+    font-weight: 600;
+}
+
+ul li span{
+    font-size: 0.8rem;
+    color: #545454;
+    font-weight: 600;
+}
+
+p, a{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p{
+    margin: 15px 0;
+}

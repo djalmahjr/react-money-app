@@ -38,7 +38,7 @@ function App() {
   }
   return (
     <>
-      <div>
+      <div className='contentTab'>
         <form onSubmit={handleSubmitForm}>
           <input type="text" onChange={handleChangeInput} value={inputText} />
           <button type='button' onClick={() => reset()}>Limpar</button>

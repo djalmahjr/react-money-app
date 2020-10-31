@@ -1,5 +1,116 @@
-.pay{
+input.money{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+}
+input.money:focus{
+    border: 1px solid #8A30E6;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
     display: flex;
     flex-direction: row;
+}
+
+.row.form{
     justify-content: space-around;
+}
+
+form h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+form .inputColumn{
+    margin: 5px 0;
+}
+
+form .inputColumn label{
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.sendButton{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+}
+
+form button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #8A30E6;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+form button:hover{
+    background-color: #3F1669;
+    color: #d4d4d4;
+    font-weight: 500;
+    align-self: flex-end;
+}
+th{
+    font-weight: 600;
+    background-color: #8A30E6;
+    color: #f4f4f4;
+    padding: 5px;
+}
+td{
+    max-width: 50px;
+    background-color: #dedede;
+    word-wrap: break-word;
+}
+
+td span{
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 600px){
+    .row{
+        flex-direction: column;
+    }
+    form .collectionInput{
+        margin: 20px 0;
+    }
+    form .sendButton{
+        margin: 20px 5px;
+    }
+    td{
+        font-size: 1.2rem;
+    }
+
 }

@@ -4,7 +4,7 @@ import  {Field,ErrorMessage} from 'formik'
 export default props => {
     return (
 
-        <div className="column">
+        <div className="column inputColumn">
             <label>{props.label}</label>
             <Field
                 {...props.input}

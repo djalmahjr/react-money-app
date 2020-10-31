@@ -1,21 +1,27 @@
 import React from 'react'
 import './Home.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+
 export default props => {
     return (
         <>
-            <div>
-                <h1>Início</h1>
-                <p>Este projeto foi criado com o objetivo de ser um meio de estudo, entre oque foi usado no projeto esta o consumo de uma API REST utilizando o <a href="https://my-json-server.typicode.com/">JSON-PlaceHolder</a> e tambem utilizei algumas biblioteca para ReactJS </p>
-                <p>Essas bibliotecas são:</p>
+            <div className='contentTab'>
+                <h1 className='headerTitle'><FontAwesomeIcon icon={faInfoCircle} size='sm'/> Info</h1>
+                <p>Este projeto foi desenvolvido em ReactJS com o objetivo de ser um meio de estudo, 
+                    entre oque foi usado no projeto esta o consumo de uma API REST utilizando o <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON-PlaceHolder</a>.</p>
+                <p>Algumas tecnologias empregadas no projeto:</p>
                 <ul>
-                    <li>React Router e React Router Dom</li>
-                    <li>React Redux</li>
-                    <li>Redux Multi</li>
-                    <li>Redux Thunk</li>
-                    <li>Formik</li>
+                    <li>1) React Router e React Router Dom: <span>Para Controlar rotas e navegação entre telas</span></li>
+                    <li>2) React Redux: <span>Para gerenciar o estado dos meus componentes e compartilhar dados entre eles</span></li>
+                    <li>3) Redux Multi: <span>Para conseguir disparar mais que uma action simultaneamente</span></li>
+                    <li>4) Redux Thunk: <span>Para que o redux possa realizar uma requisiçao a API</span></li>
+                    <li>5) Formik: <span>Para gerenciar formulários de forma mais simplificada</span></li>
+                    <li>6) Axios: <span>Para realizar requests a uma API REST</span></li>
                 </ul>
             </div>
+            
         </>
     )
 }
