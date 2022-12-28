@@ -1,19 +1,9 @@
-import React from 'react'
-import View from './views/view'
-import './global.css'
-import { BrowserRouter } from 'react-router-dom'
-
+import React from "react";
+import "./global.css";
+import Routes from "./Routes";
 
 function App() {
-
-
-  return (
-    <>
-      <BrowserRouter>
-        <View />
-      </BrowserRouter>
-    </>
-  )
+  return <Routes />;
 }
 
 export default App;

@@ -1,3 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export default () => <h4 style={{color: 'red'}}>Carregando...</h4>
+const Loading = () => <h4 style={{ color: "red" }}>Carregando...</h4>;
+
+export default Loading;

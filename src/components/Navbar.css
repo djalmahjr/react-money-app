@@ -1,90 +1,88 @@
 .navbar {
-    grid-area: nav;
-    background-color: #f2f2f2;
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 2px 10px 2px rgba(70,70,70,0.5);
-    z-index: 2;
+  grid-area: nav;
+  background-color: #f2f2f2;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 10px 2px rgba(70, 70, 70, 0.2);
+
+  z-index: 2;
 }
 
 .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar li {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
 }
 
-li.tab svg{
-    transition: 300ms;
+li.tab svg {
+  transition: 300ms;
 }
-li.tab.selected{
-    border-bottom: 2px solid #000;
-    
-}
-
-li.tab.selected span{
-    color: #8A30E6;
-    font-weight: 600;
-}
-li.tab.selected svg{
-    color: #8A30E6;
-
+li.tab.selected {
+  border-bottom: 2px solid #000;
 }
 
-li.tab:hover{
-    background-color: #dedede;
+li.tab.selected span {
+  color: #8a30e6;
+  font-weight: 600;
+}
+li.tab.selected svg {
+  color: #8a30e6;
+}
+
+li.tab:hover {
+  background-color: #dedede;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: initial;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  text-decoration: none;
+  color: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .navbar a span {
-    margin: 5px 10px;
+  margin: 5px 10px;
 }
 
-
-.select{
-    margin-bottom: 3px solid #8A30E6;
-    color: #8A30E6;
+.select {
+  margin-bottom: 3px solid #8a30e6;
+  color: #8a30e6;
 }
 
-@media(max-width: 750px){
-    .navbar li{
-        width: 33.33%;
-    }
+@media (max-width: 750px) {
+  .navbar li {
+    width: 33.33%;
+  }
 }
 
-@media(max-width: 550px){
-    .navbar{
-        height: 100%;
-    }
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .navbar li{
-        width: 100%;
-    }
+@media (max-width: 550px) {
+  .navbar {
+    height: 100%;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar li {
+    width: 100%;
+  }
 }

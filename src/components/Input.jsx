@@ -1,22 +1,29 @@
-import React from 'react'
-import  {Field,ErrorMessage} from 'formik'
+import React from "react";
 
-export default props => {
-    return (
-
-        <div className="column inputColumn">
-            <label>{props.label}</label>
-            <Field
-                {...props.input}
-                placeholder={props.placeholder}
-                readOnly={props.readOnly}
-                className={props.classInput}
-                name={props.name}
-                as={props.as}
-                type={props.type}
-            />
-            <ErrorMessage name="props.name" />
-        </div>
-
-    )
+function Input({
+  label,
+  placeholder,
+  readOnly,
+  classInput,
+  state,
+  change,
+  name,
+  type,
+}) {
+  return (
+    <div className="column inputColumn">
+      <label>{label}</label>
+      <input
+        placeholder={placeholder}
+        readOnly={readOnly}
+        className={classInput}
+        value={state}
+        onChange={change}
+        name={name}
+        type={type}
+      />
+    </div>
+  );
 }
+
+export default Input;
