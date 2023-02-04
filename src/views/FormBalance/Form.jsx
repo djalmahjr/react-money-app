@@ -51,7 +51,8 @@ const FormPay = () => {
   useEffect(() => {
     const values = global.find(
       ({ month, year }) =>
-        month == dateSelected.month && year == dateSelected.year
+        String(month) === String(dateSelected.month) &&
+        String(year) === String(dateSelected.year)
     );
 
     if (!values) {

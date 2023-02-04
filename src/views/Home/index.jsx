@@ -17,7 +17,11 @@ export default function Home(props) {
           Este projeto foi desenvolvido em ReactJS com o objetivo de ser um meio
           de estudo, entre oque foi usado no projeto esta o consumo de uma API
           REST utilizando o{" "}
-          <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+          <a
+            href="https://jsonplaceholder.typicode.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             JSON-PlaceHolder
           </a>
           .
@@ -55,7 +59,11 @@ export default function Home(props) {
         </ul>
         <div className="profileGit">
           <span>Developed By: Djalma Hipólito Junior</span>
-          <a href="https://github.com/Almallito" target="_blank">
+          <a
+            href="https://github.com/Almallito"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faGithub} size="lg" /> Acesse meu GitHub
           </a>
         </div>

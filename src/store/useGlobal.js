@@ -20,7 +20,9 @@ function GlobalProvider({ children }) {
     debits,
   }) {
     const existMonth = global.find(
-      (balance) => balance.month == month && balance.year == year
+      (balance) =>
+        String(balance.month) === String(month) &&
+        String(balance.year) === String(year)
     );
 
     if (!existMonth) {
