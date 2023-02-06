@@ -182,5 +182,58 @@
       ],
       "id": 7
     }
+  ],
+  "marketList": [
+    {
+      "month": 2,
+      "year": 2023,
+      "total": 4698,
+      "list": [
+        {
+          "name": "Pão",
+          "value": 799,
+          "amount": 2
+        },
+        {
+          "name": "Queijo",
+          "value": 949,
+          "amount": 2
+        },
+        {
+          "name": "Presunto",
+          "value": 1103,
+          "amount": 1
+        },
+        {
+          "name": "Manjeicao",
+          "value": 99,
+          "amount": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "month": "3",
+      "year": 2023,
+      "total": 1674,
+      "list": [
+        {
+          "name": "Manjeicao",
+          "value": 99,
+          "amount": 10
+        },
+        {
+          "name": "Batata",
+          "value": 111,
+          "amount": 4
+        },
+        {
+          "name": "Cebola",
+          "value": 80,
+          "amount": 3
+        }
+      ],
+      "id": 2
+    }
   ]
 }

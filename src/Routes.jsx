@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import FormBalance from "./views/FormBalance";
-import ListMarket from "./views/ListMarket";
+import MarketList from "./views/MarketList";
 import Home from "./views/Home";
 
 export default function Routes() {
@@ -17,7 +17,7 @@ export default function Routes() {
     },
     {
       path: "/list-market",
-      element: <ListMarket />,
+      element: <MarketList />,
     },
     {
       path: "/form-balance",

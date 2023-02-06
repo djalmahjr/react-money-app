@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -42,25 +43,4 @@ body,
 #root {
   transition: 30ms;
   background-color: #aea4bf;
-}
-
-@media (max-width: 1000px) {
-  .contentTab {
-    width: 70%;
-  }
-}
-
-@media (max-width: 700px) {
-  .contentTab {
-    width: 90%;
-  }
-}
-
-@media (max-width: 550px) {
-  #root {
-    grid-template-rows: 25% 1fr;
-  }
-  .contentTab {
-    padding: 15px;
-  }
 }

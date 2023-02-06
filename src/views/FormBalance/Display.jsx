@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useGlobal } from "../../store/useGlobal";
 
 const Display = () => {
@@ -6,7 +6,7 @@ const Display = () => {
   const [stateSumCredit, setStateSumCredit] = useState(0);
   const { editBalanceMonth } = useGlobal();
 
-  useEffect(() => {
+  useMemo(() => {
     const sumDebits =
       editBalanceMonth.debits &&
       editBalanceMonth.debits.reduce(

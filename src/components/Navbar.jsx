@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           <Link to="/">
             <FontAwesomeIcon icon={faHome} size={iconHome} />
-            <span>Home</span>
+            <span>Inicio</span>
           </Link>
         </Tab>
         <Tab

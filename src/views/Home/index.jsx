@@ -18,11 +18,11 @@ export default function Home(props) {
           de estudo, entre oque foi usado no projeto esta o consumo de uma API
           REST utilizando o{" "}
           <a
-            href="https://jsonplaceholder.typicode.com/"
+            href="https://www.npmjs.com/package/json-server"
             rel="noopener noreferrer"
             target="_blank"
           >
-            JSON-PlaceHolder
+            JSON-Server
           </a>
           .
         </p>
@@ -60,7 +60,7 @@ export default function Home(props) {
         <div className="profileGit">
           <span>Developed By: Djalma Hipólito Junior</span>
           <a
-            href="https://github.com/Almallito"
+            href="https://github.com/djalmahjr"
             rel="noopener noreferrer"
             target="_blank"
           >

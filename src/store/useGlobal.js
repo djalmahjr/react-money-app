@@ -4,13 +4,15 @@ import React, { useContext, createContext, useState } from "react";
 export const GlobalContext = createContext();
 
 function GlobalProvider({ children }) {
-  const [global, setGlobal] = useState([]);
+  const [balances, setBalance] = useState([]);
+  const [marketList, setMarketList] = useState([]);
   const [editBalanceMonth, setEditBalanceMonth] = useState({});
-  async function getBalances() {
+
+  const getBalances = async () => {
     const { data } = await axios.get("http://localhost:3000/balance");
-    setGlobal(data);
-  }
-  async function saveBalance({
+    setBalance(data);
+  };
+  const saveBalance = async ({
     year,
     month,
     salary,
@@ -18,8 +20,8 @@ function GlobalProvider({ children }) {
     loan,
     save,
     debits,
-  }) {
-    const existMonth = global.find(
+  }) => {
+    const existMonth = balances.find(
       (balance) =>
         String(balance.month) === String(month) &&
         String(balance.year) === String(year)
@@ -57,13 +59,46 @@ function GlobalProvider({ children }) {
       await getBalances();
       console.log(data);
     }
-  }
+  };
+
+  const getMarketList = async () => {
+    const { data } = await axios.get("http://localhost:3000/marketList");
+    setMarketList(data);
+  };
+
+  const saveMarketlist = async (values) => {
+    const existMonth = marketList.find(
+      (list) =>
+        String(list.month) === String(values.month) &&
+        String(list.year) === String(values.year)
+    );
+
+    if (!existMonth) {
+      const { data } = await axios.post(
+        "http://localhost:3000/marketList",
+        values
+      );
+      await getMarketList();
+      console.log(data);
+    } else {
+      const { data } = await axios.put(
+        `http://localhost:3000/marketList/${existMonth.id}`,
+        values
+      );
+      await getMarketList();
+      console.log(data);
+    }
+  };
+
   return (
     <GlobalContext.Provider
       value={{
-        global,
-        setGlobal,
+        balances,
+        setBalance,
         getBalances,
+        marketList,
+        getMarketList,
+        saveMarketlist,
         saveBalance,
         editBalanceMonth,
         setEditBalanceMonth,

@@ -10,6 +10,10 @@
 }
 
 .balanceMonth .month select {
+  margin-right: 10px;
+}
+
+.balanceMonth .month select {
   width: 200px;
   height: 50px;
   font-weight: 300;
@@ -20,11 +24,12 @@
 .balanceMonth input.money {
   text-decoration: none;
   padding: 5px 10px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   border-radius: 5px;
-  border: 1px solid #d4d4d4;
-  background-color: #d4d4d4;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 50px;
 }
 .balanceMonth input.money:focus {
   border: 1px solid #8a30e6;
@@ -56,7 +61,8 @@
 }
 
 .balanceMonth .row .debits table td {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .balanceMonth .row .debits table td:nth-child(3),
@@ -126,7 +132,7 @@
 }
 
 .balanceMonth form button.include {
-  background-color: #3b252c;
+  background-color: #202020;
 }
 
 .balanceMonth form button:hover {
@@ -136,15 +142,16 @@
   align-self: flex-end;
 }
 .balanceMonth th {
-  font-weight: 600;
-  background-color: #3b252c;
+  background-color: #202020;
   color: #f4f4f4;
-  padding: 5px;
+  padding: 5px 50px;
+  font-weight: 500;
 }
 .balanceMonth td {
-  background-color: #dedede;
+  background-color: #dddddd;
   word-wrap: break-word;
   max-height: 50px;
+  padding: 5px 10px;
 }
 
 .balanceMonth td span {
