@@ -9,7 +9,7 @@ function GlobalProvider({ children }) {
   const [editBalanceMonth, setEditBalanceMonth] = useState({});
 
   const getBalances = async () => {
-    const { data } = await axios.get("http://localhost:3000/balance");
+    const { data } = await axios.get("http://localhost:3001/balance");
     setBalance(data);
   };
   const saveBalance = async ({
@@ -28,7 +28,7 @@ function GlobalProvider({ children }) {
     );
 
     if (!existMonth) {
-      const { data } = await axios.post("http://localhost:3000/balance", {
+      const { data } = await axios.post("http://localhost:3001/balance", {
         year,
         month,
         credit: {
@@ -43,7 +43,7 @@ function GlobalProvider({ children }) {
       console.log(data);
     } else {
       const { data } = await axios.put(
-        `http://localhost:3000/balance/${existMonth.id}`,
+        `http://localhost:3001/balance/${existMonth.id}`,
         {
           year,
           month,
@@ -62,7 +62,7 @@ function GlobalProvider({ children }) {
   };
 
   const getMarketList = async () => {
-    const { data } = await axios.get("http://localhost:3000/marketList");
+    const { data } = await axios.get("http://localhost:3001/marketList");
     setMarketList(data);
   };
 
@@ -75,14 +75,14 @@ function GlobalProvider({ children }) {
 
     if (!existMonth) {
       const { data } = await axios.post(
-        "http://localhost:3000/marketList",
+        "http://localhost:3001/marketList",
         values
       );
       await getMarketList();
       console.log(data);
     } else {
       const { data } = await axios.put(
-        `http://localhost:3000/marketList/${existMonth.id}`,
+        `http://localhost:3001/marketList/${existMonth.id}`,
         values
       );
       await getMarketList();

@@ -26,37 +26,7 @@ export default function Home(props) {
           </a>
           .
         </p>
-        <p>Algumas tecnologias empregadas no projeto:</p>
-        <ul>
-          <li>
-            1) React Router e React Router Dom:{" "}
-            <span>Para Controlar rotas e navegação entre telas</span>
-          </li>
-          <li>
-            2) React Redux:{" "}
-            <span>
-              Para gerenciar o estado dos meus componentes e compartilhar dados
-              entre eles
-            </span>
-          </li>
-          <li>
-            3) Redux Multi:{" "}
-            <span>
-              Para conseguir disparar mais que uma action simultaneamente
-            </span>
-          </li>
-          <li>
-            4) Redux Thunk:{" "}
-            <span>Para que o redux possa realizar uma requisiçao a API</span>
-          </li>
-          <li>
-            5) Formik:{" "}
-            <span>Para gerenciar formulários de forma mais simplificada</span>
-          </li>
-          <li>
-            6) Axios: <span>Para realizar requests a uma API REST</span>
-          </li>
-        </ul>
+
         <div className="profileGit">
           <span>Developed By: Djalma Hipólito Junior</span>
           <a
