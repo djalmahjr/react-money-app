@@ -1,7 +1,7 @@
 # Money APP
 
 Site feito com intuito de ajudar no controle e balanço mensal de gastos e querendo atualizar a boa e velha planilha no excel, trazendo uma interface intuitiva e de fácil manuseio.
-Técnologias e bibliotecas empregadas no projeto:
+Bibliotecas empregadas no projeto:
 
     +ReactJS
     +React Hooks
